@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheets | HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sources/styles/fontfaces.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <h1>WDCS</h1>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 id="html">HTML - HyperText Markup Language</h2>
+            <article id="html-info">
+                <table id="html-info_table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">HTML5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="table_image">
+                                <figure>
+                                    <img src="./sources/images/HTML5.png" alt="HTML5 logo" />
+                                    <figcaption>The official logo of the latest version, HTML5</figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Filename extansion</td>
+                            <td>
+                                <code>.html</code>,
+                                <code>.htm</code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Media type</td>
+                            <td>text/html</td>
+                        </tr>
+                        <tr>
+                            <td>Release date</td>
+                            <td><time>22 January 2008</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    The HyperText Markup Language or HTML is the standard markup language for documents designed to be
+                    displayed in a web browser. It defines the meaning and structure of web content. It is often
+                    assisted by
+                    technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+                </p>
+                <p>
+                    Web browsers receive HTML documents from a web server or from local storage and render the documents
+                    into multimedia web pages. HTML describes the structure of a web page semantically and originally
+                    included cues for its appearance.
+                </p>
+                <p>
+                    HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects
+                    such as interactive forms may be embedded into the rendered page. HTML provides a means to create
+                    structured documents by denoting structural semantics for text such as headings, paragraphs, lists,
+                    links, quotes, and other items. HTML elements are delineated by tags, written using angle brackets.
+                    Tags such as <code>&lt;img&gt;</code> <code>&lt;input&gt;</code> into the page. Other tags such
+                    as
+                    <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> surround and provide information about document
+                    text and may include
+                    sub-element tags.
+                    Browsers do not display the HTML tags but use them to interpret the content of the page.
+                </p>
+                <p>
+                    HTML can embed programs written in a scripting language such as JavaScript, which affects the
+                    behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The
+                    World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS
+                    standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2] A form of
+                    HTML, known as HTML5, is used to display video and audio, primarily using the
+                    <code>&lt;canvas&gt;</code>
+                    element, together with JavaScript.
+                </p>
+            </article>
+            <article>
+                <h3>Basic Construction</h3>
+                <div class="example-windows">
+                    <pre class="code-view">
+&lt;<span class="code-tag">!DOCTYPE</span> html&gt;
+&lt;<span class="code-tag">html</span> lang="en"&gt;
+
+&lt;<span class="code-tag">head</span>&gt;
+    &lt;<span class="code-tag">meta</span> charset="UTF-8"&gt;
+    &lt;<span class="code-tag">meta</span> name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;<span class="code-tag">title</span>&gt;Title&lt;/<span class="code-tag">title</span>&gt;
+    &lt;<span class="code-tag">link</span> href='styles/style.css' rel='stylesheet'&gt;
+&lt;/<span class="code-tag">head</span>&gt;
+
+&lt;<span class="code-tag">body</span>&gt;
+&lt;/<span class="code-tag">body</span>&gt;
+                    </pre>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table_name">Tag</th>
+                            <th class="table_name">Name</th>
+                            <th>Description</th>
+                            <th class="table_mdn-link"></th>
+                            <th class="table_attributes">Attributes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;!DOCKTYPE&gt;</code></td>
+                            <td>Docktype</td>
+                            <td>Defines the document type</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;html&gt;</code></td>
+                            <td>HTML</td>
+                            <td>Defines the root of an HTML document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;head&gt;</code></td>
+                            <td>Head</td>
+                            <td>Contains metadata/information for the document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;body&gt;</code></td>
+                            <td>Body</td>
+                            <td>Defines the document's body</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;meta&gt;</code></td>
+                            <td>Meta</td>
+                            <td>Defines metadata about an HTML document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">MDN</a></td>
+                            <td>
+                                <details>
+                                    <summary>
+                                        Show
+                                    </summary>
+                                    <code title="Specifies the character encoding">sharset</code>,
+                                    <br>
+                                    <code
+                                        title="Gives the value associated with the http-equiv or name attribute">content</code>,
+                                    <br>
+                                    <code
+                                        title="Provides an HTTP header for the information/value of the content attribute">http-equiv</code>,
+                                    <br>
+                                    <code title="Specifies the name of the element">name</code>
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;title&gt;</code></td>
+                            <td>Title</td>
+                            <td>Defines a title for the document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;link&gt;</code></td>
+                            <td>Link</td>
+                            <td>Defines the relationship between a document and an external resource (most used to link
+                                to style sheets)</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">MDN</a></td>
+                            <td>
+                                <details>
+                                    <summary>
+                                        Show
+                                    </summary>
+                                    <code title="Specifies the URL of the page the link goes to">href</code>,
+                                    <br>
+                                    <code title="Specifies the language of the linked document">hreflang</code>,
+                                    <br>
+                                    <code
+                                        title="Specifies what media/device the linked document is optimized for">media</code>,
+                                    <br>
+                                    <code title="Script to be run when the element is finished loading">onload</code>,
+                                    <br>
+                                    <code
+                                        title="Specifies the relationship between the current document and the linked document">rel</code>,
+                                    <br>
+                                    <code title="Specifies the size of the linked resource">sizes</code>,
+                                    <br>
+                                    <code title="Specifies the type of element">type</code>
+                                </details>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h3>Semantic Elements</h3>
+                <p>Elements with a meaning</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table_name">Tag</th>
+                            <th class="table_name">Name</th>
+                            <th>Description</th>
+                            <th class="table_mdn-link"></th>
+                            <th class="table_attributes">Attributes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;header&gt;</code></td>
+                            <td>Header</td>
+                            <td>Defines a header for a document or section</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;main&gt;</code></td>
+                            <td>Main</td>
+                            <td>Specifies the main content of a document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;footer&gt;</code></td>
+                            <td>Footer</td>
+                            <td>Defines a footer for a document or section</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;nav&gt;</code></td>
+                            <td>Navigation</td>
+                            <td>Defines a set of navigation links</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;section&gt;</code></td>
+                            <td>Section</td>
+                            <td>Defines a section in a document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;article&gt;</code></td>
+                            <td>Article</td>
+                            <td>Defines an article</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;aside&gt;</code></td>
+                            <td>Aside</td>
+                            <td>Defines content aside from the page content</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figure&gt;</code></td>
+                            <td>Figure</td>
+                            <td>Specifies self-contained content, like illustrations, diagrams, etc.</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;figcaption&gt;</code></td>
+                            <td>Figure caption</td>
+                            <td>Tag defines a caption for a <code>&lt;figure&gt;</code> element</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption">MDN</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;time&gt;</code></td>
+                            <td>Time</td>
+                            <td>Defines a date/time</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;details&gt;</code></td>
+                            <td>Details</td>
+                            <td>Defines additional details that the user can view or hide</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;summary&gt;</code></td>
+                            <td>Summary</td>
+                            <td>Defines a visible heading for a <code>&lt;details&gt;</code> element</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;address&gt;</code></td>
+                            <td>Address</td>
+                            <td>Defines contact information for the author/owner of a document</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">MDN</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Example</p>
+                <div class="example-windows">
+                    <div class="code-view">
+                        <pre>
+&lt;<span class="code-tag">header</span>&gt;
+    &lt;<span class="code-tag">nav</span>&gt;
+        &lt;<span class="code-tag">ul</span>&gt;
+            &lt;<span class="code-tag">li</span>&gt;&lt;<span class="code-tag">a</span> href="#"&gt;Home&lt;/<span class="code-tag">a</span>&gt;&lt;/<span class="code-tag">li</span>&gt;
+            &lt;<span class="code-tag">li</span>&gt;&lt;<span class="code-tag">a</span> href="#"&gt;Shop&lt;/<span class="code-tag">a</span>&gt;&lt;/<span class="code-tag">li</span>&lt;
+            &lt;<span class="code-tag">li</span>&lt;&lt;<span class="code-tag">a</span> href="#"&gt;About&lt;/<span class="code-tag">a</span>&lt;&lt;/<span class="code-tag">li</span>&lt;
+        &lt;/<span class="code-tag">ul</span>&gt;
+    &lt;/<span class="code-tag">nav</span>&gt;
+&lt;/<span class="code-tag">header</span>&gt;
+&lt;<span class="code-tag">main</span>&gt;
+    Main
+    &lt;<span class="code-tag">section</span>&gt;
+        Section
+        &lt;<span class="code-tag">article</span>&gt;
+            Article
+            &lt;<span class="code-tag">aside</span>&gt;
+                Aside
+            &lt;/<span class="code-tag">aside</span>&gt;
+        &lt;/<span class="code-tag">article</span>&gt;
+        &lt;<span class="code-tag">figure</span>&gt;
+            &lt;<span class="code-tag">figcaption</span>&gt;Top caption&lt;/<span class="code-tag">figcaption</span>&gt;
+            &lt;<span class="code-tag">img</span> src="sources/images/Example.png" alt="Example"&gt;
+            &lt;<span class="code-tag">figcaption</span>&lt;Bottom caption&lt;/<span class="code-tag">figcaption</span>&gt;
+        &lt;/<span class="code-tag">figure</span>&gt;
+    &lt;/<span class="code-tag">section</span>&gt;
+&lt;/<span class="code-tag">main</span>&gt;
+&lt;<span class="code-tag">footer</span>&gt;
+    Footer
+    &lt;<span class="code-tag">address</span>>Address, email, phone&lt;/<span class="code-tag">address</span>&gt;
+&lt;/<span class="code-tag">footer</span>&gt;
+                        </pre>
+                    </div>
+                    <div class="browser-view">
+                        <header>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">About</a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                        <main>
+                            Main
+                            <section>
+                                Section
+                                <article>
+                                    Article
+                                    <aside>
+                                        Aside
+                                    </aside>
+                                </article>
+                                <figure>
+                                    <figcaption>Top caption</figcaption>
+                                    <img src="sources/images/Example.png" alt="Example">
+                                    <figcaption>Bottom caption</figcaption>
+                                </figure>
+                            </section>
+                        </main>
+                        <footer>
+                            Footer
+                            <address>Address, email, phone</address>
+                        </footer>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h3>Table elements</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="table_name">Tag</th>
+                            <th class="table_name">Name</th>
+                            <th>Description</th>
+                            <th class="table_mdn-link"></th>
+                            <th class="table_attributes">Attributes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;table&gt;</code></td>
+                            <td>Table</td>
+                            <td>Defines a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;thead&gt;</code></td>
+                            <td>Table head</td>
+                            <td>Groups the header content in a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;tbody&gt;</code></td>
+                            <td>Table body</td>
+                            <td>Groups the body content in a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;tfoot&gt;</code></td>
+                            <td>Table footer</td>
+                            <td>Groups the footer content in a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;tr&gt;</code></td>
+                            <td>Table row</td>
+                            <td>Defines a row in a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr">MDN</a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;td&gt;</code></td>
+                            <td>Table data</td>
+                            <td>Defines a cell in a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td">MDN</a></td>
+                            <td>
+                                <details>
+                                    <summary>Show</summary>
+                                    <code title="Defines how many columns a th element should span.">
+                                        colspan
+                                    </code>,
+                                    <br>
+                                    <code title="Defines how many rows a th element should span.">
+                                        rowspan
+                                    </code>
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;th&gt;</code></td>
+                            <td>Table head data</td>
+                            <td>Defines a header cell in a table</td>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th">MDN</a></td>
+                            <td>
+                                <details>
+                                    <summary>Show</summary>
+                                    <code title="Defines how many columns a th element should span.">
+                                        colspan
+                                    </code>,
+                                    <br>
+                                    <code title="Defines how many rows a th element should span.">
+                                        rowspan
+                                    </code>
+                                </details>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

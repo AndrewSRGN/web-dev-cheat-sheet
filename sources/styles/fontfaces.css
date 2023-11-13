@@ -1,0 +1,66 @@
+/* Oxygen */
+@font-face {
+    font-family: "Oxygen";
+    src: url("../fonts/Oxygen/Oxygen-Light.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oxygen";
+    src: url("../fonts/Oxygen/Oxygen-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oxygen";
+    src: url("../fonts/Oxygen/Oxygen-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Oswald */
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+    font-weight: Bold;
+    font-style: normal;
+}
+
+/* Sometype Mono */
+@font-face {
+    font-family: "Sometype Mono";
+    src: url("../fonts/SometypeMono/SometypeMono-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Roboto */
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
