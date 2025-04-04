@@ -19,7 +19,7 @@
     <a href="https://github.com/andrewsrgn/web-dev-cheat-sheet"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://andrewsrgn.github.io/web-dev-cheat-sheet">View Demo</a>
+    <a href="https://andrewsrgn.github.io/web-dev-cheat-sheet" target="_blank">View Demo</a>
   </p>
 </div>
 
