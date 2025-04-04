@@ -8,7 +8,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/andrewsrgn/web-dev-cheat-sheet">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="sources/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Web Dev Cheat Sheet</h3>
